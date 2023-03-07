@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
-    --background-color: #333647;
-    --pink-color: #f87652;
+    --background-color: #001797;
+    --pink-color: #f85271;
     --secondary-color: #bbbbbb;
 }
 *{
@@ -84,7 +84,7 @@ canvas.particles-js-canvas-el{
 }
 .hero_section .row img{
     width: 80%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 @media (max-width: 1200px) and (min-width: 993px){
