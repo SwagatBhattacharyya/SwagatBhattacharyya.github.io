@@ -1,60 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css" type="text/css"/>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swagat Bhattacharyya — Research website. Neuromorphic circuits, bioinspired computing, analog/mixed-signal systems.">
+  <title>Swagat Bhattacharyya</title>
+  <link rel="icon" href="portfolio/img/logo.png" type="image/png">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <title>WebHome | Swagat </title>
-    <link rel="icon" href="img/logo.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Boxicons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="hero_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
-                    <h3>Hello!</h3>
-                    <h1>I<span style="color: #f87652;">'</span>m Swagat</h1>
-                    <h3>Willkommen to my website!</h3>
-                    <div class="btn_container">
-                        <a href="./portfolio/index.html"><button class="btn btn-light animate__animated">Click Me</button></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
-                    <center>
-                        <img src="./img/Swagat.jpg" alt="SwagatGrumpyFace">
-                    </center>
-                </div>
-            </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">Swagat Bhattacharyya</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link active">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="portfolio/pdf/CV.pdf" class="nav-link nav-cv" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Swagat <span class="accent">Bhattacharyya</span></h1>
+          <p class="hero-title">Field Applications Engineer &middot; Renesas Electronics America</p>
+          <p class="hero-subtitle">Neuromorphic circuits &middot; Bioinspired computing &middot; Analog/mixed-signal systems</p>
+          <div class="hero-actions">
+            <a href="portfolio/pdf/CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+            <a href="#research" class="btn btn-outline">View Research</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://linkedin.com/in/swagat-bhattacharyya" aria-label="LinkedIn" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/SwagatBhattacharyya" aria-label="GitHub" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+            <a href="https://scholar.google.com/citations?user=6sMk4J8AAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener"><i class='bx bx-book-open'></i></a>
+          </div>
         </div>
+        <div class="hero-photo">
+          <img src="img/Swagat.jpg" alt="Swagat Bhattacharyya">
+          <p class="about-tagline">Engineer.&ensp;Researcher.&ensp;Creative.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about-section has-bg">
+      <div class="section-bg">
+        <img src="portfolio/img/Valley.jpg" alt="Valley landscape" class="section-bg-img">
+        <div class="section-overlay"></div>
+        <p class="photo-credit">Photo Credit: Sophia Asta</p>
+      </div>
+
+      <div class="section-content">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-grid">
+
+          <div class="about-bio">
+            <h3>Background</h3>
+            <p>
+              You can call me Swag! My journey has taken me through three unique "West" locations:
+              West Bengal, West Virginia, and West Lafayette. Although I've spent countless hours as
+              a lab rat, I like to think I'm a bit different from the usual, having extensive
+              industrial experience. With a vibrant and fun-loving personality, I've always been
+              driven by a deep passion for learning and exploration, instilled in me by incredible
+              teachers and mentors back in my enchanting hometown of Morgantown, West Virginia.
+            </p>
+            <p>
+              My academic adventures led me to Purdue University, where I triple majored in
+              Electrical Engineering, Applied Physics, and Mathematics. I then joined Georgia Tech
+              as an NSF Graduate Research Fellow and completed an MS in Electrical Engineering —
+              my thesis focused on neuromorphic circuits and systems. I am currently a Field
+              Applications Engineer at Renesas Electronics America. Outside of work, I find joy in
+              working out with friends, reading, and practicing Hindustani classical music (vocal
+              and bamboo flute).
+            </p>
+          </div>
+
+          <div class="about-education">
+            <h3>Academic History</h3>
+            <table class="edu-table">
+              <thead>
+                <tr>
+                  <th>Institution</th>
+                  <th>Degree</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Georgia Institute of Technology</td>
+                  <td>MS in Electrical Engineering</td>
+                  <td>2024</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Purdue University &mdash; Honors College</td>
+                  <td>BS in Electrical Engineering</td>
+                  <td>2022</td>
+                </tr>
+                <tr>
+                  <td>BS in Applied Physics</td>
+                  <td>2022</td>
+                </tr>
+                <tr>
+                  <td>BS in Mathematics</td>
+                  <td>2022</td>
+                </tr>
+                <tr>
+                  <td>Morgantown High School</td>
+                  <td>HS Diploma</td>
+                  <td>2018</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH ===== -->
+    <section id="research" class="section research-section">
+      <div class="section-content">
+        <h2 class="section-heading">Research</h2>
+        <p class="section-intro">
+          My research is highly interdisciplinary, combining circuits, signal processing, controls,
+          and computational neuroscience. I aim to create systems that can efficiently sense and
+          process information like humans by utilizing bioinspired, asynchronous sensing and
+          computing. An updated list of published works is on
+          <a href="https://scholar.google.com/citations?user=6sMk4J8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+
+        <div class="pub-group">
+          <h3>Patents</h3>
+          <ol class="pub-list">
+            <li>
+              Irazoqui P, Shah J, Meyer T, Ganesh V, Bhattacharyya S, &amp; Hsiung Y,
+              &ldquo;<a href="https://patentimages.storage.googleapis.com/40/b7/96/dc7b6443aaadf9/WO2023212101A1.pdf" target="_blank" rel="noopener">Multimodal Seizure Sensing</a>,&rdquo;
+              Published Nov 2023
+            </li>
+          </ol>
+        </div>
+
+        <div class="pub-group">
+          <h3>Journal Articles</h3>
+          <ol class="pub-list">
+            <li>
+              Bhattacharyya S,
+              &ldquo;<a href="portfolio/pdf/MSED_2025.pdf" target="_blank" rel="noopener">Performance Bounds for a Maxima-Sampling Envelope Detector</a>,&rdquo;
+              <em>IEEE Transactions on Circuits and Systems II: Express Briefs</em>, vol 72, no 10, Oct 2025
+            </li>
+            <li>
+              Bhattacharyya S &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/ChaoticNeuron.pdf" target="_blank" rel="noopener">A Six-Transistor Integrate-and-Fire Neuron Enabling Chaotic Dynamics</a>,&rdquo;
+              <em>IEEE Transactions on Biomedical Circuits and Systems</em>, vol 19, no 5, Oct 2025
+            </li>
+            <li>
+              Kurup S, Bhattacharyya S, Banner RK, Yue K, Ayyappan PR, Aziz D, Elly HN, Barton KL, Hasler J, Filler MA, &amp; Vogel EM,
+              &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10977988" target="_blank" rel="noopener">Modular HfOx-RRAM for On-Demand Micromodular Electronics</a>,&rdquo;
+              <em>IEEE Electron Device Letters</em>, vol 46, no 7, July 2025
+            </li>
+            <li>
+              Mathews P, Ayyappan PR, Ige A, Bhattacharyya S, Yang L, &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/StandardCell_TVLSI.pdf" target="_blank" rel="noopener">A 65 nm CMOS Analog Programmable Standard Cell Library for Mixed-Signal Computing</a>,&rdquo;
+              <em>IEEE Transactions on VLSI Systems</em>, vol 32, no 10, Oct 2024
+            </li>
+            <li>
+              Bhattacharyya S &amp; Hasler J,
+              &ldquo;<a href="https://www.mdpi.com/2079-9268/14/1/11" target="_blank" rel="noopener">Extrema-Triggered Conversion for Non-Stationary Signal Acquisition in Wireless Sensor Nodes</a>,&rdquo;
+              <em>JLPEA</em>, vol 14, no 1, Feb 2024
+            </li>
+            <li>
+              Bhattacharyya S, Ayyappan PR, &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/FXP_Neuron.pdf" target="_blank" rel="noopener">Towards Scalable Digital Modeling of Networks of Biorealistic Silicon Neurons</a>,&rdquo;
+              <em>IEEE Journal on Emerging and Selected Topics in CAS</em>, vol 13, no 4, pp 927&ndash;939, Dec 2023
+            </li>
+            <li>
+              Bhattacharyya S &amp; Graham DW,
+              &ldquo;<a href="portfolio/pdf/OTAC.pdf" target="_blank" rel="noopener">Amplitude-Regulated Quadrature Sine-VCO Employing an OTA-C Topology</a>,&rdquo;
+              <em>IEEE Transactions on CAS II: Express Briefs</em>, vol 70, no 6, pp 1886&ndash;1890, June 2023
+            </li>
+            <li>
+              Bhattacharyya S, Andryzcik S, &amp; Graham DW,
+              &ldquo;<a href="https://www.mdpi.com/2079-9268/10/1/6" target="_blank" rel="noopener">An Acoustic Vehicle Detector &amp; Classifier Using a Reconfigurable Analog/Mixed-Signal Platform</a>,&rdquo;
+              <em>JLPEA</em>, vol 10, no 1, Article 6, March&ndash;April 2020
+            </li>
+          </ol>
+        </div>
+
+        <div class="pub-group">
+          <h3>Conference Papers</h3>
+          <ol class="pub-list">
+            <li>
+              Mathews P, Ayyappan PR, Ige A, Bhattacharyya S, Yang L, &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/StandardCell_CICC.pdf" target="_blank" rel="noopener">A 65nm and 130nm CMOS programmable analog standard cell library for scalable system synthesis</a>,&rdquo;
+              <em>IEEE CICC</em>, Denver, CO, Apr 21&ndash;24, 2024
+            </li>
+            <li>
+              Bhattacharyya S, Yang L, &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/BuzzSort.pdf" target="_blank" rel="noopener">BuzzSort: A Linear-Time, Event-Driven Data Conversion and Sorting Framework for Approximate Computing Architectures</a>,&rdquo;
+              <em>IEEE ICRC</em>, San Diego, CA, Dec 5&ndash;6, 2023
+            </li>
+            <li>
+              Bhattacharyya S &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/Extrema_MWSCAS.pdf" target="_blank" rel="noopener">Extrema-Triggered Analog-Digital Conversion for Low-Power Wireless Sensor Nodes</a>,&rdquo;
+              <em>IEEE MWSCAS</em>, Tempe, AZ, Aug 6&ndash;9, 2023
+            </li>
+            <li>
+              Bhattacharyya S, Mathews P, Ayyappan PR, &amp; Hasler J,
+              &ldquo;<a href="portfolio/pdf/HHN_MWSCAS.pdf" target="_blank" rel="noopener">Toward Biorealistic Silicon Neural Circuits on Reconfigurable Platforms</a>,&rdquo;
+              <em>IEEE MWSCAS</em>, Tempe, AZ, Aug 6&ndash;9, 2023
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section has-bg" style="position: relative;">
+      <div class="section-bg">
+        <img src="portfolio/img/Buffalo.jpg" alt="Buffalo landscape" class="section-bg-img">
+        <div class="section-overlay"></div>
+        <p class="photo-credit">Photo Credit: Sophia Asta</p>
+      </div>
+
+      <div class="section-content">
+        <h2 class="section-heading">Skills</h2>
+        <p class="section-intro">Experienced at several levels of semiconductor development.</p>
+        <div class="skills-grid">
+
+          <div class="skills-table-wrap">
+            <h3>Hardware</h3>
+            <table class="skills-table">
+              <thead>
+                <tr><th>Area</th><th>Technologies</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Mixed-Signal Design &amp; Layout</td><td>28 nm, 180 nm, 350 nm technologies</td></tr>
+                <tr><td>EEPROM (FG) Design, Programming, &amp; Characterization</td><td>65 nm (room temperature and cryogenic conditions)</td></tr>
+                <tr><td>Automated Test &amp; Measurement</td><td>Analog Post-Si Verification</td></tr>
+                <tr><td>PCB Schematic Design and Layout</td><td>IPC Class II</td></tr>
+                <tr><td>FPGA Programming</td><td>&mdash;</td></tr>
+                <tr><td>Signal Processing</td><td>&mdash;</td></tr>
+                <tr><td>Semiconductor Physics</td><td>&mdash;</td></tr>
+                <tr><td>Circuit Macromodels</td><td>&mdash;</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="skills-table-wrap">
+            <h3>Software</h3>
+            <table class="skills-table">
+              <thead>
+                <tr><th>Tool</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Cadence Virtuoso</td><td>Layout, DRC, LVS tools</td></tr>
+                <tr><td>Cadence Spectre &amp; Spice</td><td>&mdash;</td></tr>
+                <tr><td>MATLAB</td><td>&mdash;</td></tr>
+                <tr><td>Python</td><td>&mdash;</td></tr>
+                <tr><td>C</td><td>Console &amp; Embedded Applications</td></tr>
+                <tr><td>Altium Designer &amp; KiCad</td><td>PCB Design Suite</td></tr>
+                <tr><td>Linux Environments</td><td>&mdash;</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-name">Swagat Bhattacharyya</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/swagat-bhattacharyya" aria-label="LinkedIn" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/SwagatBhattacharyya" aria-label="GitHub" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+        <a href="https://scholar.google.com/citations?user=6sMk4J8AAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener"><i class='bx bx-book-open'></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Swagat Bhattacharyya</p>
+      <p class="footer-photo-credit">Photo Credit: <strong>Sophia Asta</strong></p>
     </div>
-    <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'particles.json',
-        function(){
-            console.log('particles.json loaded...')
-        })
-    </script>   
-    <script type="text/javascript" src="./js/app.js"></script>
-    <script type="text/javascript" src="./js/particles.js"></script>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link:not(.nav-cv)');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.35 });
+
+    sections.forEach(s => observer.observe(s));
+
+    // Mobile menu toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navLinksEl = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinksEl.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksEl.classList.remove('open');
+        toggle.classList.remove('open');
+      });
+    });
+  </script>
 
 </body>
 </html>
-                                                          
